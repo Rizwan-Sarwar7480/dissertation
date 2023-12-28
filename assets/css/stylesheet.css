@@ -1305,46 +1305,56 @@ details p {
     position: relative;
     border-radius: 100px;
     overflow: hidden;
-    width: 500px;
-    height: 65px;
+    width: 650px;
+    height: 70px;
     margin: 0px 0px 36px;
-    border: 5px solid #054e81;
+    display: flex;
+    align-items: center;
+    /* background-color: #054e81;
+    border: 2px solid turquoise; */
+    background-color: #054e81;
+    border: 3px solid #054e81;
 }
 
 .dissertation-outliner .text-warp .input-wrap input {
     width: 100%;
     height: 100%;
-    padding: 5px 50px;
-    font-size: 17px;
+    padding: 0px 60px;
+    font-size: 18px;
+    font-weight: 600;
     border: unset;
+    -webkit-text-fill-color: transparent;
+    will-change: background;
+    transition: background 200ms ease-in-out 0s;
+    background: linear-gradient(to right, rgb(79, 207, 112), rgb(250, 214, 72), rgb(167, 103, 229), rgb(18, 188, 254), rgb(68, 206, 123)) 0% 0% / 200% 100% text;
 }
 
 .dissertation-outliner .text-warp .input-wrap svg {
     position: absolute;
     top: 0;
     left: 5px;
-    bottom: 2px;
+    bottom: 6px;
     margin: auto;
     width: 45px;
     height: auto;
 }
+.dissertation-outliner .text-warp .input-wrap svg path {
+    fill: turquoise;
+}
 
 .dissertation-outliner .text-warp .input-wrap button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 5px;
-    background-color: #014574;
-    color: white;
     border: unset;
     height: 80%;
-    margin: auto;
-    border-radius: 100px;
-    padding: 0px 14px;
+    min-width: fit-content;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
+    margin: 0px 7px 0px 0px;
+    position: relative;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 2px;
 }
 
 .dissertation-outliner .text-warp .input-wrap input:focus {
@@ -1370,12 +1380,38 @@ details p {
 .dissertation-outliner .text-warp .input-wrap button svg {
     position: relative;
     width: 23px;
+    margin: 0px;
 }
 
 .dissertation-outliner .text-warp .input-wrap button span {
-    display: inline-block;
-    padding: 0px 5px;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #003459;
+    position: relative;
+    border-radius: 100px;
+}
+.dissertation-outliner .text-warp .input-wrap button .bg-gradent-style {
+    -webkit-text-fill-color: transparent;
+    will-change: background;
+    transition: background 200ms ease-in-out 0s;
+    background: linear-gradient(to right, rgb(79, 207, 112), rgb(250, 214, 72), rgb(167, 103, 229), rgb(18, 188, 254), rgb(68, 206, 123)) 0% 0% / 200% 100% text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+    gap: 8px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #003459;
+    position: relative;
+    border-radius: 100px;
+    padding: 0px 20px;
 }
 
 .canva-wrap {
@@ -1396,7 +1432,8 @@ details p {
 .content-area-wrap {
     padding: 80px 0px 50px;
     position: relative;
-    background-color: black;
+    /* background-color: black; */
+    background-color: #054e81;
 }
 
 .content-area-wrap::before {
@@ -1408,7 +1445,8 @@ details p {
     width: 100%;
     height: 100%;
     /* opacity: .6; */
-    opacity: .2;
+    /* opacity: .2; */
+    opacity: .35;
     background-image: url(../images/bg-colorful-blur.jpg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -1540,6 +1578,23 @@ details p {
     box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 3px inset, rgb(0, 0, 0) 0px -1px 3px inset;
     backdrop-filter: blur(120px);
     cursor: pointer;
+}
+
+.dissertation-outliner .text-warp .input-wrap button::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: 3s linear 0s infinite normal none running borderAnimation;
+    z-index: 0;
+    background-image: linear-gradient(0deg, rgb(79, 207, 112), rgb(250, 214, 72), rgb(167, 103, 229), rgb(18, 188, 254), rgb(68, 206, 123));
+    mask-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px), linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
+}
+
+@keyframes borderAnimation {
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 /* media queries */
