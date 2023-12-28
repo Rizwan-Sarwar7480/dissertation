@@ -1773,6 +1773,9 @@ details p {
     text-align: center;
     margin: 6px 0px 12px;
 }
+.content-area-wrap .pera-wrap:last-child {
+    margin: 0px;
+}
 
 /* media queries */
 
@@ -2220,6 +2223,82 @@ details p {
         padding: 10px 5px;
     }
 
+
+    /* dissertation */
+    .dissertation-outliner .text-warp h1 {
+        margin: 0px 0px 16px;
+        font-size: 30px;
+    }
+    .dissertation-outliner .text-warp p {
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 0px 0px 26px;
+    }
+    .dissertation-outliner .text-warp .input-wrap {
+        margin: 0px 0px 25px;
+        height: 55px;
+        width: 500px;
+    }
+    .dissertation-outliner .text-warp .input-wrap svg {
+        width: 34px;
+    }
+    .dissertation-outliner .text-warp .input-wrap input {
+        font-size: 14px;
+    }
+    .dissertation-outliner .text-warp .input-wrap a {
+        margin: 0px 5px 0px 0px;
+    }
+    .canva-wrap {
+        padding: 50px 0px;
+    }
+    .content-area-wrap .pera-wrap p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .content-area-wrap .pera-wrap {
+        margin: 0px 0px 24px;
+    }
+    .content-area-wrap .pera-wrap h2 {
+        margin: 0px 0px 14px;
+        font-size: 24px;
+    }
+    .content-area-wrap .pera-wrap ul li span {
+        font-weight: 600;
+    }
+    .content-area-wrap .pera-wrap ul li {
+        line-height: 1.5;
+        font-size: 17px;
+        padding: 0px 0px 0px 6px;
+        margin: 0px 0px 10px;
+    }
+    .content-area-wrap .pera-wrap ol li {
+        padding: 0px 0px 0px 10px;
+        margin: 0px 0px 10px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    .ai-outline-generator-wrap .grid2 .heading-wrap span {
+        font-size: 30px;
+    }
+    .ai-outline-generator-wrap .grid2 a {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+    .ai-outline-generator-wrap .grid3 {
+        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .ai-outline-generator-wrap .grid3 .box .heading-wrap .bold-line {
+        margin: 0px 0px 25px;
+    }
+    .ai-outline-generator-wrap .grid3 .box .heading-wrap span {
+        font-size: 16px;
+        margin: 0px 0px 12px;
+    }
+    .ai-outline-generator-wrap .grid3 .box .detail-wrap p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2296,6 +2375,44 @@ details p {
     }
     .reviews-wrap .grid3 {
         grid-template-columns: 1fr;
+    }
+    .dissertation-outliner .text-warp p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .dissertation-outliner .text-warp .feature-sm ul {
+        gap: 14px;
+        flex-direction: column;
+    }
+    .dissertation-outliner .text-warp {
+        padding: 80px 0px 30px;
+    }
+    .content-area-wrap .pera-wrap h2 {
+        font-size: 22px;
+    }
+    .content-area-wrap .pera-wrap p {
+        line-height: 1.5;
+    }
+    .content-area-wrap .pera-wrap ul li {
+        font-size: 16px;
+    }
+    .content-area-wrap .pera-wrap ul li span {
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .ai-outline-generator-wrap .grid2 .col:nth-child(2) {
+        display: none;
+    }
+    .ai-outline-generator-wrap .grid2 {
+        justify-content: center;
+    }
+    .ai-outline-generator-wrap .grid2 {
+        justify-content: center;
+        margin: 0px 0px 30px;
+    }
+    .ai-outline-generator-wrap .grid2 .heading-wrap span {
+        font-size: 30px;
+        text-align: center;
     }
 }
 
@@ -2441,5 +2558,31 @@ details p {
     .TS-faqs-wrap .grid2 details p {
         font-size: 15px;
         line-height: 1.4;
+    }
+
+    /* dissertation */
+
+    .dissertation-outliner .text-warp .input-wrap {
+        margin: 0px 0px 25px;
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+    }
+    .ai-outline-generator-wrap .grid3 .box .heading-wrap .bold-line {
+        height: 3px;
+    }
+    
+    .ai-outline-generator-wrap .grid3 .box .heading-wrap .bold-line {
+        margin: 0px 0px 20px;
+    }
+
+    .ai-outline-generator-wrap .grid3 .box .detail-wrap p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .ai-outline-generator-wrap .grid3 {
+        gap: 12px;
+        grid-template-columns: 1fr;
     }
 }
