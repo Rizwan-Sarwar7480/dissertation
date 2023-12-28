@@ -1313,7 +1313,7 @@ details p {
     /* background-color: #054e81;
     border: 2px solid turquoise; */
     background-color: #054e81;
-    border: 3px solid #054e81;
+    border: 2px solid transparent;
 }
 
 .dissertation-outliner .text-warp .input-wrap input {
@@ -1329,6 +1329,10 @@ details p {
     background: linear-gradient(to right, rgb(79, 207, 112), rgb(250, 214, 72), rgb(167, 103, 229), rgb(18, 188, 254), rgb(68, 206, 123)) 0% 0% / 200% 100% text;
 }
 
+.dissertation-outliner .text-warp .input-wrap:has(input:focus):focus {
+    border: 2px solid turquoise;
+}
+
 .dissertation-outliner .text-warp .input-wrap svg {
     position: absolute;
     top: 0;
@@ -1342,7 +1346,7 @@ details p {
     fill: turquoise;
 }
 
-.dissertation-outliner .text-warp .input-wrap button {
+.dissertation-outliner .text-warp .input-wrap a {
     border: unset;
     height: 80%;
     min-width: fit-content;
@@ -1377,13 +1381,13 @@ details p {
     min-height: 70vh;
 }
 
-.dissertation-outliner .text-warp .input-wrap button svg {
+.dissertation-outliner .text-warp .input-wrap a svg {
     position: relative;
     width: 23px;
     margin: 0px;
 }
 
-.dissertation-outliner .text-warp .input-wrap button span {
+.dissertation-outliner .text-warp .input-wrap a span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1394,7 +1398,7 @@ details p {
     position: relative;
     border-radius: 100px;
 }
-.dissertation-outliner .text-warp .input-wrap button .bg-gradent-style {
+.dissertation-outliner .text-warp .input-wrap a .bg-gradent-style {
     -webkit-text-fill-color: transparent;
     will-change: background;
     transition: background 200ms ease-in-out 0s;
@@ -1580,7 +1584,7 @@ details p {
     cursor: pointer;
 }
 
-.dissertation-outliner .text-warp .input-wrap button::before {
+.dissertation-outliner .text-warp .input-wrap a::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -1595,6 +1599,173 @@ details p {
     100% {
         filter: hue-rotate(360deg);
     }
+}
+
+.auth-screen-wrap .grid2 {
+    width: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 0px;
+}
+
+.auth-screen-wrap .grid2 .auth-box {
+    padding: 30px 50px;
+    border: 2px solid #014574;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px;
+    border-radius: 20px;
+    width: 460px;
+    background-color: #054e81;
+}
+
+.auth-screen-wrap {
+    background-color: #014574;
+}
+
+.auth-screen-wrap .grid2 .auth-box .logo-wrap {
+    margin: 0px 0px 20px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .heading-wrap {
+    margin: 0px 0px 22px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .more-auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 0px 0px 26px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .fields-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .terms-and-conditions-wrap {
+    margin: 10px 0px 0px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .logo-wrap span {
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.auth-screen-wrap .grid2 .auth-box .heading-wrap span {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0px 0px 10px;
+    display: block;
+}
+
+.auth-screen-wrap .grid2 .auth-box .heading-wrap p {
+    color: rgb(255 255 255 / 50%);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.auth-screen-wrap .grid2 .auth-box .more-auth a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #014574;
+    color: rgb(227, 229, 232);
+    border: 1px solid rgb(5 78 129);
+    width: 100%;
+    min-height: 38px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .more-auth a svg {
+    height: auto;
+    width: 26px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .more-auth a:nth-child(1) svg {
+    width: 32px;
+    margin: 0px -3px 0px 0px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .more-auth a:nth-child(2) {
+    background-color: #002b48;
+}
+
+.auth-screen-wrap .grid2 .auth-box .fields-wrap .field-wrap {}
+
+.auth-screen-wrap .grid2 .auth-box .fields-wrap .field-wrap .input-wrap {}
+
+.auth-screen-wrap .grid2 .auth-box .fields-wrap .field-wrap .input-wrap input {display: block;width: 100%;border: 1px solid #014574;background: rgb(28, 31, 34);color: white;border-radius: 10px;padding: 6px 10px;font-size: 15px;font-weight: 400;line-height: 1.5;background-color: #014574;}
+
+.auth-screen-wrap .grid2 .auth-box .fields-wrap .button-wrap {}
+
+.auth-screen-wrap .grid2 .auth-box .fields-wrap .button-wrap .submit-button {
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px 0px 0px;
+    background-color: #009ef7;
+}
+
+.auth-screen-wrap .grid2 .auth-box .terms-and-conditions-wrap p {
+    color: rgb(255 255 255 / 50%);
+    font-size: 14px;
+    text-align: center;
+}
+
+.auth-screen-wrap .grid2 .auth-box .terms-and-conditions-wrap p a {
+    color: white;
+}
+.auth-screen-wrap .grid2 .signIn-signOut {
+    margin: 20px 0px;
+}
+
+.auth-screen-wrap .grid2 .signIn-signOut p {
+    color: rgb(255 255 255 / 50%);
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    gap: 6px;
+}
+
+.auth-screen-wrap .grid2 .signIn-signOut p a {
+    color: white;
+    display: inline-block;
+}
+.auth-screen-wrap .grid2 .auth-box .fields-wrap .field-wrap .input-wrap input::placeholder {
+    color: rgb(255 255 255 / 60%);
+}
+
+.auth-screen-wrap .grid2 .auth-box .forget-password-wrap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255 255 255 / 80%);
+    font-size: 16px;
+    font-weight: 300;
+    margin: 6px 0px -10px;
+}
+
+.auth-screen-wrap .grid2 .auth-box .forget-password-wrap a:hover {
+    text-decoration: underline;
 }
 
 /* media queries */
