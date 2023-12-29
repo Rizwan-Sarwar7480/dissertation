@@ -1706,7 +1706,20 @@ details p {
 
 .auth-screen-wrap .grid2 .auth-box .fields-wrap .field-wrap .input-wrap {}
 
-.auth-screen-wrap .grid2 .auth-box .fields-wrap .field-wrap .input-wrap input {display: block;width: 100%;border: 1px solid #014574;background: rgb(28, 31, 34);color: white;border-radius: 10px;padding: 6px 10px;font-size: 15px;font-weight: 400;line-height: 1.5;background-color: #014574;}
+.auth-screen-wrap .grid2 .auth-box .fields-wrap .field-wrap .input-wrap input {
+    display: block;
+    width: 100%;
+    border: 1px solid #014574;
+    background: rgb(28, 31, 34);
+    color: white;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #014574;
+    color: rgb(255 255 255 / 90%);
+}
 
 .auth-screen-wrap .grid2 .auth-box .fields-wrap .button-wrap {}
 
@@ -2036,6 +2049,25 @@ details p {
     }
     .ai-outline-generator-wrap {
         padding: 50px 0px;
+    }
+
+
+    /* signup */
+    .auth-screen-wrap .grid2 .auth-box {
+        padding: 20px 40px;
+        width: 400px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .logo-wrap span {
+        font-size: 24px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .heading-wrap span {
+        font-size: 22px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .heading-wrap p {
+        font-size: 14px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .fields-wrap .button-wrap .submit-button {
+        font-size: 14px;
     }
 }
 
@@ -2414,6 +2446,52 @@ details p {
         font-size: 30px;
         text-align: center;
     }
+    .auth-screen-wrap .grid2 .auth-box {
+        padding: 20px 25px;
+        width: 370px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .logo-wrap {
+        margin: 0px 0px 14px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .logo-wrap span {
+        font-size: 22px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .heading-wrap {
+        margin: 0px 0px 16px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .heading-wrap span {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .auth-screen-wrap .grid2 .auth-box .heading-wrap p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .auth-screen-wrap .grid2 .auth-box .more-auth a:nth-child(1) svg {
+        width: 30px;
+        margin: 0px -3px 0px 0px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .more-auth a svg {
+        height: auto;
+        width: 24px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .fields-wrap .button-wrap .submit-button {
+        font-size: 14px;
+        margin: 16px 0px 0px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .terms-and-conditions-wrap p {
+        font-size: 13px;
+    }
+    .auth-screen-wrap .grid2 .signIn-signOut {
+        margin: 16px 0px;
+    }
+    .auth-screen-wrap .grid2 .signIn-signOut p {
+        font-size: 13px;
+        gap: 5px;
+    }
+    .auth-screen-wrap .grid2 .auth-box .forget-password-wrap a {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 568px) {
@@ -2563,10 +2641,19 @@ details p {
     /* dissertation */
 
     .dissertation-outliner .text-warp .input-wrap {
-        margin: 0px 0px 25px;
-        height: fit-content;
+        margin: 0px 0px 80px;
+        height: 50px;
         width: 100%;
         flex-direction: column;
+        overflow: unset;
+    }
+    .dissertation-outliner .text-warp .input-wrap a {
+        margin: 0px;
+        position: absolute;
+        bottom: -55px;
+    }
+    .dissertation-outliner .text-warp .input-wrap input {
+        padding: 0px 0px 0px 45px;
     }
     .ai-outline-generator-wrap .grid3 .box .heading-wrap .bold-line {
         height: 3px;
@@ -2584,5 +2671,14 @@ details p {
     .ai-outline-generator-wrap .grid3 {
         gap: 12px;
         grid-template-columns: 1fr;
+    }
+
+    .auth-screen-wrap .grid2 .auth-box {
+        padding: 18px;
+        width: 100%;
+    }
+
+    .auth-screen-wrap .grid2 .signIn-signOut {
+        margin: 14px 0px 0px;
     }
 }
