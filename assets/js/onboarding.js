@@ -94,5 +94,5 @@ const RadioButtonChecked = (ele) => {
 
 
 const DashBoardRedirection = () => {
-    window.location.pathname = '/dissertation/workspace.html';
+    window.location.href = 'https://rizwan-sarwar7480.github.io/dissertation/workspace.html';
 }
