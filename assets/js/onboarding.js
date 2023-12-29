@@ -94,5 +94,5 @@ const RadioButtonChecked = (ele) => {
 
 
 const DashBoardRedirection = () => {
-    window.location.pathname = 'workspace.html';
+    window.location.pathname = '/dissertation/workspace.html';
 }
