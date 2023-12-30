@@ -400,11 +400,17 @@ body {
 
 .project-area-wrap .project-area .dissertation-generator .heading-wrap {}
 
-.project-area-wrap .project-area .dissertation-generator .generator-input-wrap {}
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0px 0px 35px;
+}
 
 .project-area-wrap .project-area .dissertation-generator .heading-sm-wrap {}
 
 .project-area-wrap .project-area .dissertation-generator .generated-result-wrap {
+    display: none;
 }
 
 .project-area-wrap .project-area .dissertation-generator .heading-wrap span {
@@ -414,33 +420,34 @@ body {
     margin: 0px 0px 14px;
 }
 
-.project-area-wrap .project-area .dissertation-generator .generator-input-wrap textarea {
+/* .project-area-wrap .project-area .dissertation-generator .generator-input-wrap textarea {
     padding: 14px 10px;
     font-size: 14px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid lightgray;
     min-height: 100px;
+} */
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap input {
+    padding: 14px 10px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    min-height: 50px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap input:focus {
+    outline: none;
 }
 
 .project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap {
-    display: flex;
-    justify-content: right;
+    display: none;
 }
 
-.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap button {
-    background-color: #3669ec;
-    color: white;
-    border: 1px solid transparent;
-    padding: 12px 18px;
-    font-size: 16px;
-    border-radius: 8px;
-}
-
-.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .input-wrap {
-    display: flex;
-    margin: 0px 0px 16px;
-}
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .input-wrap {width: 100%;}
 
 .project-area-wrap .project-area .dissertation-generator .heading-sm-wrap span {
     display: block;
@@ -450,15 +457,9 @@ body {
 }
 
 .project-area-wrap .project-area .dissertation-generator .generated-result-wrap .generated-result {
-    min-height: 300px;
-    background-color: white;
-    padding: 8px;
-    font-size: 14px;
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid lightgray;
     display: flex;
-    margin: 0px 0px 16px;
+    align-items: flex-start;
+    margin: 0px 0px 14px;
 }
 
 .project-area-wrap .project-area .dissertation-generator .generated-result-wrap .btn-wrap {}
@@ -493,7 +494,7 @@ body {
     flex-direction: row-reverse;
     justify-content: left;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .project-area-wrap .project-area .dissertation-generator details summary .icon {
@@ -522,4 +523,73 @@ body {
 
 .project-area-wrap .project-area .dissertation-generator details .instructions-wrap ol li span {
     font-weight: 700;
+}
+.project-area-wrap .project-area .dissertation-generator details summary .icon svg {
+    height: auto;
+    width: 25px;
+    transition: .2s ease-in-out;
+}
+.project-area-wrap .project-area .dissertation-generator details[open] summary .icon svg {
+    transform: rotate(90deg);
+}
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .image-wrap {
+    display: flex;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap img {
+    background-color: #ebebec;
+    padding: 5px;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap button {
+    padding: 12px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#3669ec;
+    color: white;
+    border: 1px solid #3669ec;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap input::placeholder {
+    font-size: 16px;
+    color: black;
+}
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap:has( .input-wrap input:focus) .btn-wrap {
+    display: block;
+}
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap button svg {
+    height: auto;
+    width: 20px;
+}
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap:focus, 
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap:hover {
+    display: block;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .generated-result .our-logo {
+    background-color: #ebebec;
+    padding: 5px;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .generated-result .our-logo svg {
+    width: 25px;
+    height: 22px;
+    color: #999999;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .generated-result .generated-text {
+    min-height: 50px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
 }
