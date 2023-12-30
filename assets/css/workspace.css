@@ -320,14 +320,206 @@ body {
     width: 18px;
 }
 
-.rs-workspace-wrap .rs-grid2 .rs-mainarea .project-area-wrap {
+.project-area-wrap {
     background: linear-gradient(315deg, #b3decb 0%, #ddb3c6 100%);
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 52px);
     padding: 30px;
+    overflow-y: auto;
 }
 
-.project-area-wrap .cantainer {background-color: white;width: 100%;height: 100%;border-radius: 20px;}
+.project-area-wrap .cantainer {width: 100%;height: 100%;}
 
-.rs-workspace-wrap .rs-grid2 .rs-mainarea .project-area-wrap .project-area {
+.project-area-wrap .project-area {padding: 50px 100px;background-color: #f7f7f7;width: 100%;min-height: 100%;border-radius: 20px;}
+
+.project-area-wrap .project-area .getting-started {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0px 0px 35px;
+}
+
+.project-area-wrap .project-area .getting-started .icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    padding: 12px;
+    border-radius: 22px;
+    transition: .2s ease-in-out;
+}
+
+.project-area-wrap .project-area .getting-started .icon-wrap span {
+    font-size: 26px;
+    line-height: normal;
+}
+
+.project-area-wrap .project-area .getting-started .icon-wrap:hover {
+    transform: scale(1.1);
+}
+
+.project-area-wrap .project-area .getting-started .detail-wrap {width: 100%;}
+
+.project-area-wrap .project-area .getting-started .detail-wrap .heading-wrap {}
+
+.project-area-wrap .project-area .getting-started .detail-wrap .tag-wrap {
+    display: flex;
+    gap: 8px;
+}
+
+.project-area-wrap .project-area .getting-started .detail-wrap .heading-wrap span {
+    display: block;
+    font-size: 22px;
+    color: rgb(0 0 0 / 70%);
+    margin: 0px 0px 6px;
+}
+
+.project-area-wrap .project-area .getting-started .detail-wrap .tag-wrap .tag {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    padding: 0px 12px;
+    gap: 5px;
+}
+
+.project-area-wrap .project-area .getting-started .detail-wrap .tag-wrap .tag span {
+    font-size: 12px;
+}
+
+.project-area-wrap .project-area .getting-started .detail-wrap .tag-wrap .tag svg {
+    height: auto;
+    width: 14px;
+    margin: 1px 0px 0px;
+}
+
+.project-area-wrap .project-area .dissertation-generator {
+    margin: 0px 0px 35px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .heading-wrap {}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap {}
+
+.project-area-wrap .project-area .dissertation-generator .heading-sm-wrap {}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap {
+}
+
+.project-area-wrap .project-area .dissertation-generator .heading-wrap span {
+    display: block;
+    font-size: 22px;
+    color: rgb(0 0 0 / 70%);
+    margin: 0px 0px 14px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap textarea {
+    padding: 14px 10px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    min-height: 100px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap {
+    display: flex;
+    justify-content: right;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .btn-wrap button {
+    background-color: #3669ec;
+    color: white;
+    border: 1px solid transparent;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generator-input-wrap .input-wrap {
+    display: flex;
+    margin: 0px 0px 16px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .heading-sm-wrap span {
+    display: block;
+    font-size: 22px;
+    color: rgb(0 0 0 / 70%);
+    margin: 0px 0px 14px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .generated-result {
+    min-height: 300px;
+    background-color: white;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    display: flex;
+    margin: 0px 0px 16px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .btn-wrap {}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .btn-wrap button {
+    background-color: #3669ec;
+    color: white;
+    border: 1px solid transparent;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .btn-wrap button svg {
+    height: auto;
+    width: 14px;
+}
+
+.project-area-wrap .project-area .dissertation-generator .generated-result-wrap .btn-wrap button span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.project-area-wrap .project-area .dissertation-generator details {}
+
+.project-area-wrap .project-area .dissertation-generator details .instructions-wrap {
+    margin: 20px 0px 0px;
+}
+
+.project-area-wrap .project-area .dissertation-generator details summary {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-area-wrap .project-area .dissertation-generator details summary .icon {
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-area-wrap .project-area .dissertation-generator details summary span {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 3px solid #f5c34a;
+}
+
+.project-area-wrap .project-area .dissertation-generator details .instructions-wrap ol {
+    padding: 0px 0px 0px 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-area-wrap .project-area .dissertation-generator details .instructions-wrap ol li {
+    padding: 0px 0px 0px 8px;
+    font-size: 17px;
+}
+
+.project-area-wrap .project-area .dissertation-generator details .instructions-wrap ol li span {
+    font-weight: 700;
 }
