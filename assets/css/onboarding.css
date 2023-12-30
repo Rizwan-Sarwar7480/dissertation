@@ -42,7 +42,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 45, 96);
+    background-color: #009ef7;
 }
 
 .onboarding-wrap .grid2 .onbarding-editing .onboarding-scroll {
@@ -127,9 +127,9 @@ body {
     gap: 10px;
     font-size: 16px;
     font-weight: 500;
-    background-color: #ff2d60;
+    background-color: #009ef7;
     color: white;
-    border: 2px solid #ff2d60;
+    border: 2px solid #009ef7;
     border-radius: 8px;
     cursor: pointer;
     margin: 16px 0px 0px;
@@ -148,7 +148,7 @@ ul.splide__pagination .splide__pagination__page {
 
 ul.splide__pagination .splide__pagination__page.is-active {
     transform: unset;
-    background-color: #ff2d60;
+    background-color: #009ef7;
 }
 
 ul.splide__pagination li {
@@ -169,7 +169,7 @@ ul.splide__pagination li::before {
 }
 .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .fields-wrap .button-wrap button:hover {
     background-color: transparent;
-    color: #ff2d60;
+    color: #009ef7;
 }
 
 .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .fields-wrap .rs-user-photo-wrapper {
