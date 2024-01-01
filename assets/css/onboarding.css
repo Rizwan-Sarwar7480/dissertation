@@ -330,3 +330,81 @@ ul.splide__pagination li::before {
 .onboarding-wrap .grid2 .onbarding-editing .onboarding-step3 .fields-wrap .button-wrap button {
     margin: 50px 0px 0px;
 }
+
+/*  media query  */
+
+@media (max-width: 1366px) {
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .logo-wrap span {
+        font-size: 25px;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .heading-wrap span {
+        font-size: 30px;
+        width: 100%;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .fields-wrap .button-wrap button svg {
+        height: auto;
+        width: 17px;
+    }
+    .onboarding-wrap .grid2 .onboarding-view .view-box .userImage-wrap img {
+        width: 70px;
+        height: 70px;
+    }
+    .onboarding-wrap .grid2 .onboarding-view .view-box .userName-wrap .rs-name {
+        font-size: 24px;
+    }
+    .onboarding-wrap .grid2 .onboarding-view .view-box .dissertationUseFor-wrap .rs-reason-for-use {
+        font-size: 17px;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step3 .heading-wrap span {
+        width: 100%;
+        margin: 100px 0px 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step {
+        width: 90%;
+        margin: auto;
+    }
+    .onboarding-wrap .grid2 .onboarding-view .view-box {
+        width: 340px;
+        min-height: 180px;
+        border-radius: 25px;
+    }
+    .onboarding-wrap .grid2 .onboarding-view .view-box .userImage-wrap img {
+        width: 60px;
+        height: 60px;
+    }
+    .onboarding-wrap .grid2 .onboarding-view {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 568px) {
+    .onboarding-wrap .grid2 {
+        grid-template-columns: 100%;
+    }
+    .onboarding-wrap .grid2 .col:nth-child(2) {
+        display: none;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .fields-wrap .rs-user-photo-wrapper .userImage-sm-wrap {
+        padding: 0px;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .heading-wrap span {
+        font-size: 25px;
+        font-weight: 600;
+        width: 100%;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .fields-wrap .button-wrap button {
+        padding: 13px 0px;
+        font-size: 15px;
+        gap: 4px;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .fields-wrap .button-wrap button svg {
+        height: auto;
+        width: 16px;
+    }
+    .onboarding-wrap .grid2 .onbarding-editing .onboarding-step .fields-wrap {
+        gap: 4px;
+    }
+}
